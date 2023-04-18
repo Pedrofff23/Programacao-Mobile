@@ -32,13 +32,12 @@ class MainActivity : AppCompatActivity() {
         val resultText: TextView = findViewById(R.id.result_text);
 
 
-        if (resultText.text.toString() == R.string.app_name.toString()) {
+        if (resultText.text == "Hello World") {
             resultText.text = "1"
         }else {
             if (resultText.text.toString().toInt() < 6){
                 resultText.text = (resultText.text.toString().toInt()+1).toString()
             }
         }
-
     }
 }
